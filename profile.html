@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Shopping Cart | My Products Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-rtl.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a id="brand" href="index.html">Shopping Cart</a>
+          <nav>
+            <ul id="user-registration">
+              <li id="login"><a href="login.html">Sign In</a></li>
+              <li id="register"><a href="register.html">Sign Up</a></li>
+            </ul>
+            <ul id="user-info">
+              <li id="en-lang">En</li>
+              <li id="ar-lang">Ar</li>
+              <li><a id="user" href="profile.html"></a></li>
+              <li><a href="favorites.html">Favorites</a></li>
+              <li><a href="myProducts.html">My Products</a></li>
+              <li class="shopping-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge"></span>
+                <div class="dropdown-menu">
+                  <div></div>
+                  <a href="carts.html">View all products</a>
+                </div>
+              </li>
+              <li><a id="logout" href="register.html">Logout</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <a href="createProduct.html" class="create-product-icon">
+        <i class="fa fa-plus"></i>
+      </a>
+    </header>
+    <section class="profile-page">
+      <div class="container">
+        <img src="images/user_avatar.jpg" class="user-avatar" alt="" />
+        <h2 class="username"></h2>
+        <p class="email"></p>
+        <p class="productsLength">Products Length: <span></span></p>
+        <a class="edit-profile" href="editProfile.html">Edit profile</a>
+
+        <a href="createProduct.html" class="create-product-icon">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+    </section>
+
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/langeDir.js"></script>
+    <script src="js/cartMenu.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

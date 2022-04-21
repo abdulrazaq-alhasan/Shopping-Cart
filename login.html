@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Shopping Cart | Login Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-rtl.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a id="brand" href="index.html">Shopping Cart</a>
+          <nav>
+            <ul id="user-registration">
+              <li id="login"><a href="login.html">Sign In</a></li>
+              <li id="register"><a href="register.html">Sign Up</a></li>
+            </ul>
+            <ul id="user-info">
+              <li id="en-lang">En</li>
+              <li id="ar-lang">Ar</li>
+              <li><a id="user" href="profile.html"></a></li>
+              <li><a href="favorites.html">Favorites</a></li>
+              <li class="shopping-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge"></span>
+                <div class="dropdown-menu">
+                  <div></div>
+                  <a href="carts.html">View all products</a>
+                </div>
+              </li>
+              <li><a id="logout" href="register.html">Logout</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="user-form">
+      <form>
+        <h2>Login User</h2>
+
+        <label for="username">Name:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Please enter your email.."
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Please enter your password.."
+        />
+        <input id="login-btn" type="submit" value="Sign in" />
+        Do not have an account <a href="register.html">Register</a>
+      </form>
+    </section>
+
+    <script src="js/login.js"></script>
+    <script src="js/langeDir.js"></script>
+  </body>
+</html>
